@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 12</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="main-container" id="main-container">
+      <!-- Section-1  -->
+      <section class="section-1">
+        <div class="child-section-1">
+          <h4 class="heading-h4">Display Color</h4>
+          <button type="button" class="random-btn" id="random-btn">
+            Random Color
+          </button>
+        </div>
+        <div class="divider" id="color-display"></div>
+        <!-- <div class="color-display" id="color-display"></div> -->
+      </section>
+      <!-- section 2 -->
+      <div class="section-2">
+        <div class="child-section-2">
+          <div class="heading-h4">Change & Copy Color</div>
+          <button
+            type="button"
+            class="copy-to-clipboard-btn"
+            id="copy-to-clipboard"
+          >
+            Copy To ClipBoard
+          </button>
+        </div>
+        <div class="child-section-3">
+          <p>Select Copy Mode</p>
+          <div class="color-parent">
+            <div class="hex">
+              <input
+                type="radio"
+                name="color-mode"
+                value="hex"
+                id="radioBtn"
+                checked
+              />
+              <label for="radio">HEX</label>
+            </div>
+            <div class="rgb">
+              <input
+                type="radio"
+                name="color-mode"
+                value="rgb"
+                id="radioBtn1"
+              />
+              <label for="radio">RGB</label>
+            </div>
+          </div>
+        </div>
+        <div class="child-section-4">
+          <div class="hex-rgb-parent">
+            <div class="input-parent">
+              <p>HEX</p>
+              <span>#</span>
+              <input
+                type="text"
+                name="text"
+                id="input-1"
+                value="ffffff"
+                placeholder="Input Hex Color"
+              />
+            </div>
+            <div class="input-parent">
+              <p id="select-rgb">RGB</p>
+              <input
+                type="text"
+                name="text"
+                id="input-2"
+                value="rgb(255, 255, 255)"
+                disabled
+                placeholder="Input RGB Color"
+              />
+            </div>
+          </div>
+          <div class="adjust-rbg">
+            <p>Adjusts RGB Colors</p>
+            <div class="rgb-range">
+              <div class="input-title">
+                <div class="">
+                  <label for="range">Red</label>
+                  <input
+                    type="range"
+                    name="range"
+                    id="rgb-range-red"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <p id="title-1">255</p>
+              </div>
+
+              <div class="input-title">
+                <div class="">
+                  <label for="range">Green</label>
+                  <input
+                    type="range"
+                    name="range"
+                    id="rgb-range-green"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <p id="title-2">255</p>
+              </div>
+
+              <div class="input-title">
+                <div class="">
+                  <label for="range">Blue</label>
+                  <input
+                    type="range"
+                    name="range"
+                    id="rgb-range-blue"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <p id="title-3">255</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section  -->
+      <section class="section-last-container">
+        <div class="section-header">
+          <h3 class="section-title">Preset Colors</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="preset-colors" id="preset-colors">
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
